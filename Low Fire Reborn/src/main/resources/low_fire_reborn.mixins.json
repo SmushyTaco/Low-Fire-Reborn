@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "package": "com.smushytaco.low_fire_reborn.mixins",
+  "compatibilityLevel": "JAVA_${java}",
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "client": [
+    "InGameOverlayRendererMixin"
+  ]
+}

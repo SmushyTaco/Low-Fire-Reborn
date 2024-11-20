@@ -1,3 +1,4 @@
-# Low Fire
+# Low Fire Reborn
+CurseForge: https://www.curseforge.com/minecraft/mc-mods/low-fire-reborn/
 
-Reduces the height of the fire overlay when the player is on fire in first person.
+Modrinth: https://modrinth.com/mod/low-fire-reborn/

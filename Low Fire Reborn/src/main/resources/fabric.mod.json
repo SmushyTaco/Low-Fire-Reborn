@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "low_fire_reborn",
+  "version": "${version}",
+  "name": "Low Fire Reborn",
+  "description": "This mod lets you lower first person fire!",
+  "authors": [
+    "UltimateBoomer (Original Author)",
+    "SmushyTaco (Creator of Fork)"
+  ],
+  "contact": {
+    "homepage": "https://www.smushytaco.com/",
+    "issues": "https://www.curseforge.com/minecraft/mc-mods/low-fire-reborn/issues/",
+    "sources": "https://github.com/SmushyTaco/Low-Fire-Reborn/"
+  },
+  "license": "MIT",
+  "icon": "assets/low_fire_reborn/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      {
+        "adapter": "kotlin",
+        "value": "com.smushytaco.low_fire_reborn.LowFire"
+      }
+    ],
+    "modmenu": [
+      "com.smushytaco.low_fire_reborn.configuration_support.ModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "low_fire_reborn.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${fabricloader}",
+    "fabric-api": ">=${fabric_api}",
+    "fabric-language-kotlin": ">=${fabric_language_kotlin}",
+    "minecraft": ">=${minecraft}",
+    "java": ">=${java}",
+    "cloth-config2": ">=${clothconfig}"
+  },
+  "suggests": {
+    "modmenu": ">=${modmenu}"
+  }
+}
