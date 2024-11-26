@@ -1,11 +1,11 @@
 {
-  "text.autoconfig.low_fire_reborn.title": "Low Fire Reborn Configuration",
-  "text.autoconfig.low_fire_reborn.option.enableLowFire": "Enable Low Fire",
-  "text.autoconfig.low_fire_reborn.option.shouldRenderFire": "Should Render Fire",
-  "text.autoconfig.low_fire_reborn.option.fireOffset": "Fire Offset",
-  "text.autoconfig.low_fire_reborn.option.fireOffsetCycleUpperKeyLimit": "Fire Offset Cycle Upper Key Limit",
-  "text.autoconfig.low_fire_reborn.option.fireOffsetCycleLowerKeyLimit": "Fire Offset Cycle Lower Key Limit",
-  "text.autoconfig.low_fire_reborn.option.fireOffsetChange": "Fire Offset Change",
+  "text.config.low_fire_reborn.title": "Low Fire Reborn Configuration",
+  "text.config.low_fire_reborn.option.enableLowFire": "Enable Low Fire",
+  "text.config.low_fire_reborn.option.shouldRenderFire": "Should Render Fire",
+  "text.config.low_fire_reborn.option.fireOffset": "Fire Offset",
+  "text.config.low_fire_reborn.option.fireOffsetCycleUpperKeyLimit": "Fire Offset Cycle Upper Key Limit",
+  "text.config.low_fire_reborn.option.fireOffsetCycleLowerKeyLimit": "Fire Offset Cycle Lower Key Limit",
+  "text.config.low_fire_reborn.option.fireOffsetChange": "Fire Offset Change",
 
   "category.low_fire_reborn.low_fire_reborn": "Low Fire",
   "key.low_fire_reborn.toggle": "Toggle Low Fire",
