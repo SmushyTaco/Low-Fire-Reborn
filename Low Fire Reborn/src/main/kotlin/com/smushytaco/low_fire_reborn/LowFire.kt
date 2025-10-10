@@ -5,16 +5,18 @@ import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper
 import net.minecraft.client.option.KeyBinding
 import net.minecraft.client.util.InputUtil
 import net.minecraft.text.Text
+import net.minecraft.util.Identifier
 import org.lwjgl.glfw.GLFW
 import kotlin.math.abs
 object LowFire: ClientModInitializer {
     const val MOD_ID = "low_fire_reborn"
     val config = ModConfig.createAndLoad()
-    private val TOGGLE_KEYBINDING = KeyBinding("key.$MOD_ID.toggle", InputUtil.Type.KEYSYM, GLFW.GLFW_KEY_UNKNOWN, "category.$MOD_ID.$MOD_ID")
-    private val TOGGLE_RENDER_KEYBINDING = KeyBinding("key.$MOD_ID.toggle_render", InputUtil.Type.KEYSYM, GLFW.GLFW_KEY_UNKNOWN, "category.$MOD_ID.$MOD_ID")
-    private val CYCLE_FIRE_HEIGHT_KEYBINDING = KeyBinding("key.$MOD_ID.cycle_fire_height", InputUtil.Type.KEYSYM, GLFW.GLFW_KEY_UNKNOWN, "category.$MOD_ID.$MOD_ID")
-    private val RAISE_FIRE_KEYBINDING = KeyBinding("key.$MOD_ID.raise_fire", InputUtil.Type.KEYSYM, GLFW.GLFW_KEY_UNKNOWN, "category.$MOD_ID.$MOD_ID")
-    private val LOWER_FIRE_KEYBINDING = KeyBinding("key.$MOD_ID.lower_fire", InputUtil.Type.KEYSYM, GLFW.GLFW_KEY_UNKNOWN, "category.$MOD_ID.$MOD_ID")
+    private val KEYBIND_CATEGORY = KeyBinding.Category.create(Identifier.of(MOD_ID, "category"))
+    private val TOGGLE_KEYBINDING = KeyBinding("key.$MOD_ID.toggle", InputUtil.Type.KEYSYM, GLFW.GLFW_KEY_UNKNOWN, KEYBIND_CATEGORY)
+    private val TOGGLE_RENDER_KEYBINDING = KeyBinding("key.$MOD_ID.toggle_render", InputUtil.Type.KEYSYM, GLFW.GLFW_KEY_UNKNOWN, KEYBIND_CATEGORY)
+    private val CYCLE_FIRE_HEIGHT_KEYBINDING = KeyBinding("key.$MOD_ID.cycle_fire_height", InputUtil.Type.KEYSYM, GLFW.GLFW_KEY_UNKNOWN, KEYBIND_CATEGORY)
+    private val RAISE_FIRE_KEYBINDING = KeyBinding("key.$MOD_ID.raise_fire", InputUtil.Type.KEYSYM, GLFW.GLFW_KEY_UNKNOWN, KEYBIND_CATEGORY)
+    private val LOWER_FIRE_KEYBINDING = KeyBinding("key.$MOD_ID.lower_fire", InputUtil.Type.KEYSYM, GLFW.GLFW_KEY_UNKNOWN, KEYBIND_CATEGORY)
     private var cycleIncrement = false
     override fun onInitializeClient() {
         KeyBindingHelper.registerKeyBinding(TOGGLE_KEYBINDING)
