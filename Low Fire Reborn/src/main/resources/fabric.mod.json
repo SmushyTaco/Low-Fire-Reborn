@@ -13,7 +13,7 @@
     "issues": "https://www.curseforge.com/minecraft/mc-mods/low-fire-reborn/issues/",
     "sources": "https://github.com/SmushyTaco/Low-Fire-Reborn/"
   },
-  "license": "MIT",
+  "license": "Apache-2.0",
   "icon": "assets/low_fire_reborn/icon.png",
   "environment": "client",
   "entrypoints": {
