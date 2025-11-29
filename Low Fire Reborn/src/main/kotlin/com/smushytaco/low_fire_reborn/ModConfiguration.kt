@@ -1,5 +1,6 @@
 package com.smushytaco.low_fire_reborn
-import io.wispforest.owo.config.annotation.*
+import io.wispforest.owo.config.annotation.Config
+import io.wispforest.owo.config.annotation.Modmenu
 @Modmenu(modId = LowFire.MOD_ID)
 @Config(name = LowFire.MOD_ID, wrapperName = "ModConfig")
 @Suppress("UNUSED")
