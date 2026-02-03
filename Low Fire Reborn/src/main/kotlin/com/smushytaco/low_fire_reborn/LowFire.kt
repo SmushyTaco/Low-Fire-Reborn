@@ -5,13 +5,13 @@ import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents
 import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper
 import net.minecraft.client.KeyMapping
 import net.minecraft.network.chat.Component
-import net.minecraft.resources.ResourceLocation
+import net.minecraft.resources.Identifier
 import org.lwjgl.glfw.GLFW
 import kotlin.math.abs
 object LowFire: ClientModInitializer {
     const val MOD_ID = "low_fire_reborn"
     val config = ModConfig.createAndLoad()
-    private val KEYBIND_CATEGORY = KeyMapping.Category.register(ResourceLocation.fromNamespaceAndPath(MOD_ID, "category"))
+    private val KEYBIND_CATEGORY = KeyMapping.Category.register(Identifier.fromNamespaceAndPath(MOD_ID, "category"))
     private val TOGGLE_KEYBINDING = KeyMapping("key.$MOD_ID.toggle", InputConstants.Type.KEYSYM, GLFW.GLFW_KEY_UNKNOWN, KEYBIND_CATEGORY)
     private val TOGGLE_RENDER_KEYBINDING = KeyMapping("key.$MOD_ID.toggle_render", InputConstants.Type.KEYSYM, GLFW.GLFW_KEY_UNKNOWN, KEYBIND_CATEGORY)
     private val CYCLE_FIRE_HEIGHT_KEYBINDING = KeyMapping("key.$MOD_ID.cycle_fire_height", InputConstants.Type.KEYSYM, GLFW.GLFW_KEY_UNKNOWN, KEYBIND_CATEGORY)
